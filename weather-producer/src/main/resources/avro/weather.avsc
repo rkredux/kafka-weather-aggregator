@@ -1,0 +1,20 @@
+{
+    "type": "record",
+    "namespace": "com.weather.example",
+    "name": "Weather",
+    "doc": "Avro Schema for the station weather",
+    "fields": [
+        {"name": "observationDateTimeUnix", "type": "long", "doc": "observation unix seconds in UTC"},
+        {"name": "location", "type": "string", "doc": "name of the location"},
+        {"name": "locationId", "type": "string", "doc": "location id"},
+        {"name": "country", "type": "string", "doc": "country of the location"},
+        {"name": "latitude", "type": "double", "doc": "latitude coordinate of the location"},
+        {"name": "longitude", "type": "double", "doc": "longitude coordinate of the location"},
+        {"name": "temp", "type": "double", "doc": "current observed temperature in kelvin" },
+        {"name": "feelsLikeTemp", "type": "double", "doc": "feels like temp in kelvin"},
+        {"name": "minimumTemp", "type": "double", "doc": "minimum current temp observed in the location"},
+        {"name": "maximumTemp", "type": "double", "doc": "maximum current temp observed in the location"},
+        {"name": "pressure", "type": "double", "doc": "Atmospheric pressure (on the sea level, if there is no sea_level or grnd_level data), hPa"},
+        {"name": "humidity", "type": "double", "doc": "observed humidity at the location in %"}
+    ]
+}
